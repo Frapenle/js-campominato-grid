@@ -8,5 +8,10 @@ for (let i = 1; i <= 100; i++) {
     // aggiungere elemento square al parent minefield
     const minefield = document.getElementById("minefield");
     minefield.append(square);
-    square.innerText = ([i])
+    square.innerText = ([i]);
+
+    square.addEventListener("click", function() {
+        square.classList.toggle("hold");
+    })
 }
+

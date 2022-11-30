@@ -5,10 +5,10 @@
 }
 
 section#minefield {
+    margin: 50px auto;
     border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     width: 800px;
     aspect-ratio: 1;
     background-color: rgb(247, 200, 138);
@@ -19,4 +19,9 @@ section#minefield {
     aspect-ratio: 1;
     border: 2px solid black;
     text-align: center;
+    cursor: pointer;
+}
+
+.hold {
+    background-color: green;
 }
