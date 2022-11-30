@@ -10,6 +10,7 @@ for (let i = 1; i <= 100; i++) {
     minefield.append(square);
     square.innerText = ([i]);
 
+    //add eventlistener onclick
     square.addEventListener("click", function() {
         square.classList.toggle("hold");
     })
