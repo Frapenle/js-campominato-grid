@@ -18,4 +18,5 @@ section#minefield {
     width: calc(100% / 10);
     aspect-ratio: 1;
     border: 2px solid black;
+    text-align: center;
 }
