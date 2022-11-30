@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section#minefield {
+    margin: auto;
+    width: 800px;
+    aspect-ratio: 1;
+    background-color: rgb(247, 200, 138);
+}
+
+.square {
+    width: calc(100% / 10);
+    aspect-ratio: 1;
+    border: 2px solid black;
+}
