@@ -5,6 +5,9 @@
 }
 
 section#minefield {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     width: 800px;
     aspect-ratio: 1;
