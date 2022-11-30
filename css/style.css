@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+main {
+    width: 900px;
+    background-color: rgb(234, 124, 124);
+    margin: auto;
+}
+
+button {
+    padding: .3rem .6rem;
+    background-color: antiquewhite;
+}
+
 section#minefield {
     margin: 50px auto;
     border: 2px solid black;
