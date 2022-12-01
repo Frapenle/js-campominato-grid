@@ -11,11 +11,12 @@ playButton.addEventListener("click", function() {
         // creare elemento square
         //aggiungo i quadrati al minefield
         // const square = document.createElement("div");
-        const square = createNewElement(i);
+        const square = createNewElement();
 
         //append element on box-container
         const box = document.querySelector(".box-container");
         box.appendChild(square);
+        square.innerHTML = `<p class="m-auto">${i}</p>`
         
         //add eventlistener onclick
         square.addEventListener("click", function() {
