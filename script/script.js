@@ -1,17 +1,21 @@
 
 const playButton = document.getElementById("play");
 playButton.addEventListener("click", function() {
+
+    // add override element on minefield
+    const minefield = document.getElementById("minefield");
+    minefield.innerHTML = `<div class="box-container"></div>`;
     
-    // Creare un contatore da 1 a 100
+    // Create counter 
     for (let i = 1; i <= 100; i++) {
         // creare elemento square
         //aggiungo i quadrati al minefield
         // const square = document.createElement("div");
         const square = createNewElement(i);
-        
-        // aggiungere elemento square al parent minefield
-        const minefield = document.getElementById("minefield");
-        minefield.append(square);
+
+        //append element on box-container
+        const box = document.querySelector(".box-container");
+        box.appendChild(square);
         
         //add eventlistener onclick
         square.addEventListener("click", function() {
